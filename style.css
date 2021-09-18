@@ -1,0 +1,160 @@
+body{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0px;
+    row-gap: 20px;
+    align-items: center;
+}
+
+nav{
+    background-image: linear-gradient(to right,blue,turquoise);
+    font-weight: bolder;
+    font-family:monospace;
+    text-align:left;
+    padding-left: 30px;
+    font-size: 17px;
+    letter-spacing: 10px;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    border-radius: 300px;
+    
+   
+   text-align: center;
+   padding: 40px;
+    width: 110px;
+    height: 110px;
+    position: relative;
+    left: 16%;
+    font-size: 15px;
+   
+}
+
+header p{
+    margin: 0px;
+}
+
+header,main{
+    margin-left: 10%;
+}
+
+.gnr{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.pls{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+
+.popSong{
+    color: turquoise;
+}
+
+.rockSong{
+    color: rgb(19, 88, 82);
+}
+
+.raggaeSong{
+    color: rgb(5, 236, 167);
+}
+
+.delimiter{
+    
+    display: none;
+}
+
+
+
+
+.adauga {
+    width: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(63, 184, 240);
+    position: absolute;
+    border-radius: 300px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-family:monospace;
+    font-style: oblique;
+    font-size: 20px;
+}
+.adauga:hover{
+    color:rgb(255, 255, 255)
+}
+
+
+
+.song{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 40px;
+    background-color: black;
+    height: 200px;
+    width: 80%;
+    
+    text-align: center;
+    border-radius: 200px;
+}
+
+
+@media(min-width:720px){
+    .pls{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 2px;
+    }
+    
+
+    .song{
+        flex-direction: row;
+        width: 100%;
+        gap:0px;
+        border-radius: 0px;
+        height: 40px;
+        justify-content: flex-start;
+
+    }
+
+    .song p{
+        margin-left: 15%;
+        width: 100px;
+        text-align: left;
+    }
+
+    main{
+        margin-left: 0px;
+    }
+
+    header{
+        left: 25%;
+        text-align: center;
+        padding: 40px;
+         width: 180px;
+         height: 170px;
+         font-size: 21px;
+    }
+
+    .gnr{
+        margin-left: 40px;
+    }
+}
